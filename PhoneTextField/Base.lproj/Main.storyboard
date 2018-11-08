@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PhoneTextField" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机号码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKN-Fq-xOG">
+                                <rect key="frame" x="20" y="170" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26K-O9-Y3v">
+                                <rect key="frame" x="120" y="199.5" width="235" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="sVf-hV-FKL"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KYn-mu-5dq" customClass="PhoneTextField" customModule="PhoneTextField" customModuleProvider="target">
+                                <rect key="frame" x="120" y="160.5" width="235" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lKz-F1-2kh"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KYn-mu-5dq" secondAttribute="trailing" constant="20" id="5UB-rC-cOp"/>
+                            <constraint firstItem="26K-O9-Y3v" firstAttribute="trailing" secondItem="KYn-mu-5dq" secondAttribute="trailing" id="8ze-2M-zd5"/>
+                            <constraint firstItem="KYn-mu-5dq" firstAttribute="leading" secondItem="PKN-Fq-xOG" secondAttribute="trailing" constant="30" id="Au9-an-a8S"/>
+                            <constraint firstItem="PKN-Fq-xOG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Cep-Lt-xYk"/>
+                            <constraint firstItem="PKN-Fq-xOG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="JHH-bk-q5y"/>
+                            <constraint firstItem="KYn-mu-5dq" firstAttribute="bottom" secondItem="26K-O9-Y3v" secondAttribute="top" constant="1" id="SXt-M6-RgC"/>
+                            <constraint firstItem="KYn-mu-5dq" firstAttribute="centerY" secondItem="PKN-Fq-xOG" secondAttribute="centerY" id="jm8-RV-bc1"/>
+                            <constraint firstItem="26K-O9-Y3v" firstAttribute="leading" secondItem="KYn-mu-5dq" secondAttribute="leading" id="uA5-w5-GZ5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="126.38680659670166"/>
+        </scene>
+    </scenes>
+</document>
